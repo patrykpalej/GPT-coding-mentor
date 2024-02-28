@@ -11,7 +11,8 @@ def create_assistant(api_key, model="gpt-4", assistant_name="Coding mentor by Pa
             instructions="Help to solve programming tasks, but never provide the solution"
                          " and never write any code for the user. Just guide the user in the "
                          "right direction. The default programming language is Python. You can"
-                         " ask questions to get information about what exatcly should be done.",
+                         " ask questions to get information about what exatcly should be done. "
+                         "You should answer in the same language as the question in asked.",
             model=model
         )
     else:
