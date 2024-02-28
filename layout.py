@@ -10,8 +10,6 @@ def create_sidebar():
 
     st.sidebar.warning("Note that Assistants API currently doesn't support streaming output")
 
-    model = st.sidebar.selectbox("Choose a model:", ["gpt-3.5-turbo-1106", "gpt-4"])
-
     st.sidebar.markdown("---")
     api_key = st.sidebar.text_input("Your API key", type="password")
 
@@ -24,4 +22,4 @@ def create_sidebar():
     st.sidebar.markdown("5. Create an [API key](https://platform.openai.com/api-keys)")
     st.sidebar.markdown("6. Paste it above")
 
-    return model, api_key
+    return api_key

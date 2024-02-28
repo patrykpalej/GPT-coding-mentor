@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 
-def create_assistant(api_key, model, assistant_name="Coding mentor by Patryk Palej"):
+def create_assistant(api_key, model="gpt-4", assistant_name="Coding mentor by Patryk Palej"):
     client = OpenAI(api_key=api_key)
     my_assistants = [assistant.name for assistant in client.beta.assistants.list().data]
 

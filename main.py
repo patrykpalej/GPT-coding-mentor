@@ -7,11 +7,11 @@ from layout import create_sidebar
 
 st.set_page_config(page_title="GPT coding mentor", page_icon="🦾")
 
-model, api_key = create_sidebar()
+api_key = create_sidebar()
 
 
 if api_key:
-    client, assistant, thread = create_assistant(api_key, model)
+    client, assistant, thread = create_assistant(api_key)
 else:
     client = assistant = thread = None
 
